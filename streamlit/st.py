@@ -577,32 +577,32 @@ Desenvolver uma solução integrada voltada ao turismo regional, composta por um
             "Regressão Logística (SMOTE)": {
                 "modelo": "streamlit/modelos/modelo_lr_smote.pkl",
                 "previsoes": "streamlit/previsoes/previsoes_lr_smote.pkl",
-                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "Regressão Logística (SMOTEENN)": {
                 "modelo": "streamlit/modelos/modelo_lr_smoteenn.pkl",
                 "previsoes": "streamlit/previsoes/previsoes_lr_smoteenn.pkl",
-                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "KNN (SMOTE)": {
                 "modelo": "streamlit/modelos/modelo_knn_smote.pkl",
                 "previsoes": "streamlit/previsoes/previsoes_knn_smote.pkl",
-                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "KNN (SMOTEENN)": {
                 "modelo": "streamlit/modelos/modelo_knn_smoteenn.pkl",
                 "previsoes": "streamlit/previsoes/previsoes_knn_smoteenn.pkl",
-                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "XGBoost (SMOTE)": {
                 "modelo": "streamlit/modelos/modelo_xgb_smote.pkl",
                 "previsoes": "streamlit/previsoes/previsoes_xgb_smote.pkl",
-                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "XGBoost (SMOTEENN)": {
                 "modelo": "streamlit/modelos/modelo_xgb_smoteenn.pkl",
                 "previsoes": "streamlit/previsoes/previsoes_rf_smoteenn.pkl",
-                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "Random Forest (SMOTE)": {
                 "modelo": "streamlit/modelos/modelo_rf_smote.pkl",
