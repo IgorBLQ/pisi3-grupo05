@@ -49,8 +49,8 @@ def main():
     # Carregando os datasets necessários
     @st.cache_data
     def load_data():
-        df_negocios = pd.read_parquet('dataset\yelp_academic_dataset_business_cleaned.parquet')
-        df_tip = pd.read_parquet('dataset\yelp_academic_dataset_tip_cleaned.parquet')
+        df_negocios = pd.read_parquet('dataset/yelp_academic_dataset_business_cleaned.parquet')
+        df_tip = pd.read_parquet('dataset/yelp_academic_dataset_tip_cleaned.parquet')
         return df_negocios, df_tip
 
     df_negocios, df_tip = load_data()
@@ -429,7 +429,7 @@ Desenvolver uma solução integrada voltada ao turismo regional, composta por um
         # Carregar os dados diretamente do arquivo CSV
         @st.cache_data
         def load_data():
-            df = pd.read_csv('dataset\yelp_academic_dataset_business_cleaned.csv')
+            df = pd.read_csv('dataset/yelp_academic_dataset_business_cleaned.csv')
             return df
 
         df = load_data()
@@ -575,44 +575,44 @@ Desenvolver uma solução integrada voltada ao turismo regional, composta por um
         # Carregar os modelos salvos e as previsões no conjunto de teste
         modelos = {
             "Regressão Logística (SMOTE)": {
-                "modelo": "streamlit\modelos\modelo_lr_smote.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_lr_smote.pkl",
-                "y_test": "streamlit\test\y_test.pklstreamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_lr_smote.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_lr_smote.pkl",
+                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
             },
             "Regressão Logística (SMOTEENN)": {
-                "modelo": "streamlit\modelos\modelo_lr_smoteenn.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_lr_smoteenn.pkl",
-                "y_test": "streamlit\test\y_test.pklstreamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_lr_smoteenn.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_lr_smoteenn.pkl",
+                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
             },
             "KNN (SMOTE)": {
-                "modelo": "streamlit\modelos\modelo_knn_smote.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_knn_smote.pkl",
-                "y_test": "streamlit\test\y_test.pklstreamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_knn_smote.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_knn_smote.pkl",
+                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
             },
             "KNN (SMOTEENN)": {
-                "modelo": "streamlit\modelos\modelo_knn_smoteenn.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_knn_smoteenn.pkl",
-                "y_test": "streamlit\test\y_test.pklstreamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_knn_smoteenn.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_knn_smoteenn.pkl",
+                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
             },
             "XGBoost (SMOTE)": {
-                "modelo": "streamlit\modelos\modelo_xgb_smote.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_xgb_smote.pkl",
-                "y_test": "streamlit\test\y_test.pklstreamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_xgb_smote.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_xgb_smote.pkl",
+                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
             },
             "XGBoost (SMOTEENN)": {
-                "modelo": "streamlit\modelos\modelo_xgb_smoteenn.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_rf_smoteenn.pkl",
-                "y_test": "streamlit\test\y_test.pklstreamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_xgb_smoteenn.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_rf_smoteenn.pkl",
+                "y_test": "streamlit/test/y_test.pklstreamlit/test/y_test.pkl"
             },
             "Random Forest (SMOTE)": {
-                "modelo": "streamlit\modelos\modelo_rf_smote.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_rf_smote.pkl",
-                "y_test": "streamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_rf_smote.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_rf_smote.pkl",
+                "y_test": "streamlit/test/y_test.pkl"
             },
             "Random Forest (SMOTEENN)": {
-                "modelo": "streamlit\modelos\modelo_rf_smoteenn.pkl",
-                "previsoes": "streamlit\previsoes\previsoes_rf_smoteenn.pkl",
-                "y_test": "streamlit\test\y_test.pkl"
+                "modelo": "streamlit/modelos/modelo_rf_smoteenn.pkl",
+                "previsoes": "streamlit/previsoes/previsoes_rf_smoteenn.pkl",
+                "y_test": "streamlit/test/y_test.pkl"
             }
         }
 
